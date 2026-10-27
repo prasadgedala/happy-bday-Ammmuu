@@ -34,7 +34,8 @@ body {
     radial-gradient(circle at top, rgba(255, 255, 255, 0.82), transparent 28%),
     linear-gradient(180deg, #fff8fb 0%, #fffaf4 20%, #fef4ee 100%);
   color: var(--ink);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   line-height: 1.7;
 }
 
@@ -1599,6 +1600,10 @@ p {
 }
 
 @media (max-width: 720px) {
+  .container {
+    width: min(var(--container), calc(100% - 1.2rem));
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -1622,6 +1627,10 @@ p {
     display: flex;
   }
 
+  .story-card-grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+
   .gallery-shell {
     grid-template-columns: 1fr;
   }
@@ -1631,7 +1640,8 @@ p {
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+    gap: 0.8rem;
   }
 
   .timeline-card {
@@ -1645,6 +1655,12 @@ p {
   .countdown-grid {
     grid-template-columns: repeat(2, minmax(110px, 1fr));
   }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1653,11 +1669,37 @@ p {
   }
 
   .hero-copy h1 {
-    font-size: 3rem;
+    font-size: clamp(2.4rem, 12vw, 3.3rem);
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 0.98rem;
   }
 
   .intro-card {
     padding: 2rem 1.4rem;
+  }
+
+  .story-card-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-flip-card {
+    height: 200px;
+  }
+
+  .card-back p {
+    font-size: 0.92rem;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 0.7rem;
   }
 
   .music-player {
@@ -1671,6 +1713,11 @@ p {
 
   .equalizer {
     justify-content: center;
+  }
+
+  .lightbox-content {
+    max-width: min(92vw, 420px);
+    padding: 0.7rem;
   }
 }
 
