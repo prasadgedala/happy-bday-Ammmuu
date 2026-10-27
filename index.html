@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A romantic birthday fairytale website for Ramya Prasad from Sai Prasad."
+    />
+    <title>Happy Birthday, Ramya Prasad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <div class="intro-screen" id="introScreen" aria-live="polite">
+      <div class="intro-card">
+        <span class="intro-badge">For my forever girl</span>
+        <h1>Hey, my love... <span>💗</span></h1>
+        <p>I made something special just for you.</p>
+        <button class="primary-btn intro-btn" id="openSurpriseBtn" type="button">
+          Open Your Surprise <span aria-hidden="true">✨</span>
+        </button>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Go to home section">
+          <span class="brand-heart">❤</span>
+          Ramya
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#story" class="nav-link">Our Story</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#letter" class="nav-link">Love Letter</a>
+          <a href="#surprise" class="nav-link">Surprise</a>
+          <a href="#countdown" class="nav-link">Countdown</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section active" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-inner">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">To the one who makes my world glow</p>
+            <h1>Happy Birthday, Ramya Prasad</h1>
+            <p class="subtitle">
+              From Sai Prasad, with all my love, gratitude, and a heart that keeps choosing you.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn story-trigger" id="storyButton" type="button">
+                Start Our Love Story <span aria-hidden="true">❤️</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator" aria-label="Scroll to story">
+          <span>Scroll</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <section class="welcome section reveal" id="welcome">
+        <div class="container intro-message">
+          <p class="section-tag">A birthday wish from my heart</p>
+          <h2>Happy Birthday, My Beautiful Ramya! <span>🎂❤️</span></h2>
+          <p>
+            To the girl who makes my world brighter, my heart happier, and my life more beautiful — this little world is just for you.
+          </p>
+          <p class="signature">With all my love, Sai Prasad <span>💖</span></p>
+        </div>
+      </section>
+
+      <section class="story section" id="story">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Our love story</p>
+            <h2>Every chapter feels like a fairytale.</h2>
+          </div>
+
+          <div class="story-card-grid reveal" aria-label="Our love story cards">
+            <button class="story-flip-card" type="button" aria-label="Flip story card: The First Hello">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <span class="story-card-number">01</span>
+                  <span class="story-card-title">The First Hello</span>
+                </div>
+                <div class="card-face card-back">
+                  <p>5th July — The day our story began.... One little phone call, a thousand butterflies, and the beginning of something beautiful. 💕</p>
+                </div>
+              </div>
+            </button>
+
+            <button class="story-flip-card" type="button" aria-label="Flip story card: Growing Closer">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <span class="story-card-number">02</span>
+                  <span class="story-card-title">Growing Closer</span>
+                </div>
+                <div class="card-face card-back">
+                  <p>Our First Meet.... From hearing your voice to seeing your smile, you started feeling a little more like home. 🫶</p>
+                </div>
+              </div>
+            </button>
+
+            <button class="story-flip-card" type="button" aria-label="Flip story card: Falling in Love">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <span class="story-card-number">03</span>
+                  <span class="story-card-title">Falling in Love</span>
+                </div>
+                <div class="card-face card-back">
+                  <p>Our Second Meet.... Somewhere between your smile and our conversations, my heart chose you. 💖</p>
+                </div>
+              </div>
+            </button>
+
+            <button class="story-flip-card" type="button" aria-label="Flip story card: Beautiful Moments">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <span class="story-card-number">04</span>
+                  <span class="story-card-title">Beautiful Moments</span>
+                </div>
+                <div class="card-face card-back">
+                  <p>Little Moments, Big Love 🌸❤️
+              
+                    Every moment became a memory, every smile became special, and every meeting brought us closer. ✨
+                  </p>
+                </div>
+              </div>
+            </button>
+
+            <button class="story-flip-card" type="button" aria-label="Flip story card: Our Engagement">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <span class="story-card-number">05</span>
+                  <span class="story-card-title">Our Marriage</span>
+                </div>
+                <div class="card-face card-back">
+                  <p> ❤️ ❤️ Dec-12 ❤️ ❤️ Two hearts, one promise, and a lifetime of choosing each other. ❤️ A promise that our hearts will keep choosing each other.</p>
+                </div>
+              </div>
+            </button>
+
+            <button class="story-flip-card" type="button" aria-label="Flip story card: Our Forever">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <span class="story-card-number">06</span>
+                  <span class="story-card-title">Our Forever</span>
+                </div>
+                <div class="card-face card-back">
+                  <p>Our Happily Ever After... Our love story doesn't end with marriage; that's where our forever begins. 🥹💕.</p>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <div class="story-continue-wrap">
+            <button class="primary-btn story-continue hidden" id="storyContinueBtn" type="button">
+              Continue to the Memories <span aria-hidden="true">💖</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Our beautiful moments</p>
+            <h2>Snapshots of us, framed with love.</h2>
+          </div>
+
+          <div class="gallery-shell reveal">
+            <button class="gallery-arrow prev" type="button" aria-label="Previous gallery image">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="gallery-grid" id="galleryGrid" aria-live="polite">
+              <figure class="gallery-item active" data-index="0" tabindex="0">
+                <div class="gallery-frame">
+                  <img src="assets/images/ramya-01.jpeg" alt="Romantic memory one" />
+                </div>
+                <figcaption>Our story begins with a smile.</figcaption>
+              </figure>
+              <figure class="gallery-item" data-index="1" tabindex="0">
+                <div class="gallery-frame">
+                  <img src="assets/images/ramya-02.jpeg" alt="Romantic memory two" />
+                </div>
+                <figcaption>Sweet little moments that mean everything.</figcaption>
+              </figure>
+              <figure class="gallery-item" data-index="2" tabindex="0">
+                <div class="gallery-frame">
+                  <img src="assets/images/ramya-03.jpeg" alt="Romantic memory three" />
+                </div>
+                <figcaption>Every glance feels magical.</figcaption>
+              </figure>
+              <figure class="gallery-item" data-index="3" tabindex="0">
+                <div class="gallery-frame">
+                  <img src="assets/images/ramya-04.jpeg" alt="Romantic memory four" />
+                </div>
+                <figcaption>Moments that bloom with love.</figcaption>
+              </figure>
+              <figure class="gallery-item" data-index="4" tabindex="0">
+                <div class="gallery-frame">
+                  <img src="assets/images/ramya-05.jpeg" alt="Romantic memory five" />
+                </div>
+                <figcaption>Promises and golden memories.</figcaption>
+              </figure>
+              <figure class="gallery-item" data-index="5" tabindex="0">
+                <div class="gallery-frame">
+                  <img src="assets/images/ramya-06.jpeg" alt="Romantic memory six" />
+                </div>
+                <figcaption>Forever starts with us.</figcaption>
+              </figure>
+              <figure class="gallery-item" data-index="6" tabindex="0">
+                <div class="gallery-frame">
+                  <img src="assets/images/ramya-07.jpeg" alt="Romantic memory seven" />
+                </div>
+                <figcaption>Little joys, big memories.</figcaption>
+              </figure>
+              <figure class="gallery-item" data-index="7" tabindex="0">
+                <div class="gallery-frame">
+                  <img src="assets/images/ramya-08.jpeg" alt="Romantic memory eight" />
+                </div>
+                <figcaption>A love that keeps growing.</figcaption>
+              </figure>
+              <figure class="gallery-item" data-index="8" tabindex="0">
+                <div class="gallery-frame">
+                  <img src="assets/images/ramya-09.jpeg" alt="Romantic memory nine" />
+                </div>
+                <figcaption>Always us, always home.</figcaption>
+              </figure>
+            </div>
+
+            <button class="gallery-arrow next" type="button" aria-label="Next gallery image">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="gallery-continue-wrap">
+            <button class="primary-btn gallery-continue hidden" id="galleryContinueBtn" type="button">
+              Continue to Your Letter <span aria-hidden="true">💌</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="letter section" id="letter">
+        <div class="container letter-wrap reveal">
+          <div class="letter-header">
+            <p class="section-tag">A secret love letter</p>
+            <h2>A Little Letter, Just for You <span>💌</span></h2>
+          </div>
+
+          <div class="envelope-wrapper">
+            <div class="envelope" id="envelope" aria-live="polite">
+              <div class="envelope-top"></div>
+              <div class="seal">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="envelope-content">
+                <p>Open My Letter <span>❤️</span></p>
+              </div>
+            </div>
+
+            <article class="letter-card" id="letterCard" aria-live="polite">
+              <div class="paper-text" id="letterText"></div>
+            </article>
+          </div>
+
+          <div class="letter-continue-wrap">
+            <button class="primary-btn letter-continue hidden" id="letterContinueBtn" type="button">
+              Continue the Magic <span aria-hidden="true">💖</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="gift section" id="surprise">
+        <div class="container gift-wrap reveal">
+          <div class="gift-header">
+            <p class="section-tag">A little surprise</p>
+            <h2>A Little Surprise for My Favorite Person <span>🎁</span></h2>
+            <p>Because someone as special as you deserves something magical.</p>
+          </div>
+
+          <div class="gift-box" id="giftBox" tabindex="0" role="button" aria-label="Open the surprise gift">
+            <div class="gift-lid"></div>
+            <div class="gift-box-body"></div>
+            <div class="gift-ribbon ribbon-left"></div>
+            <div class="gift-ribbon ribbon-right"></div>
+            <div class="gift-bow"></div>
+          </div>
+
+          <div class="gift-message" id="giftMessage" aria-live="polite">
+            <p>
+              Surprise, my love! ❤️
+            </p>
+            <p>
+              If I could give you one gift today, it would be the chance to see yourself through my eyes — so you could understand how incredibly special you are to me.
+            </p>
+            <p>Your happiness means the world to me.</p>
+            <p>Happy Birthday, Ramya! I love you more than words can say.</p>
+            <p class="signature">— Sai Prasad <span>💖</span></p>
+          </div>
+
+          <button class="secondary-btn" id="moreSurpriseBtn" type="button">
+            One More Surprise <span aria-hidden="true">✨</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="reasons section" id="reasons">
+        <div class="container reasons-wrap reveal">
+          <p class="reasons-tag">REASONS WHY I LOVE YOU</p>
+          <h2 class="special-title">Because there are a thousand little reasons.</h2>
+
+          <button class="reasons-trigger" id="reasonsButton" type="button">
+            Tell Me Why You Love Me <span aria-hidden="true">💗</span>
+          </button>
+
+          <div class="reason-reveal is-visible" aria-live="polite">
+            <p class="reason-text" id="reasonText">Your beautiful smile.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="countdown section" id="countdown">
+        <div class="container countdown-wrap reveal">
+          <p class="section-tag">Our forever</p>
+          <h2>Counting Down to Our Forever <span>💖</span></h2>
+          <p class="countdown-subtitle">The next beautiful chapter of our love story begins...</p>
+
+          <div class="countdown-grid" id="countdownGrid" aria-live="polite">
+            <div class="count-box">
+              <span class="count-value" id="days">00</span>
+              <span class="count-label">Days</span>
+            </div>
+            <div class="count-box">
+              <span class="count-value" id="hours">00</span>
+              <span class="count-label">Hours</span>
+            </div>
+            <div class="count-box">
+              <span class="count-value" id="minutes">00</span>
+              <span class="count-label">Minutes</span>
+            </div>
+            <div class="count-box">
+              <span class="count-value" id="seconds">00</span>
+              <span class="count-label">Seconds</span>
+            </div>
+          </div>
+
+          <p class="countdown-note">Same team. Same dreams. Same life. Forever. <span>💗</span></p>
+          <button class="primary-btn countdown-continue" id="countdownContinueBtn" type="button">
+            See Our Forever <span aria-hidden="true">💞</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="finale section" id="finale">
+        <div class="container finale-wrap reveal">
+          <div class="finale-heart" aria-hidden="true">❤</div>
+          <div class="finale-love-burst" aria-hidden="true">
+            <span>💖</span>
+            <span>💞</span>
+            <span>💗</span>
+            <span>💕</span>
+          </div>
+          <p class="section-tag">Happy birthday, my love</p>
+          <div class="finale-love-message" aria-label="I love you Ammuu Ramya">
+            <span class="finale-word finale-word-main">I LOVE YOU</span>
+            <span class="finale-word finale-word-name">AMMUU</span>
+            <span class="finale-tag">(#RAMYA)</span>
+          </div>
+          <h2>Happy Birthday, My Love <span>❤️</span></h2>
+          <p>
+            Ramya Prasad, if I could make one wish today, it would be that life gives you as much happiness as you have brought into mine.
+          </p>
+          <p>Thank you for being part of my story. I can't wait to write all our next chapters together.</p>
+          <p class="signature">With endless love,<br />Sai Prasad <span>💖</span></p>
+          <button class="primary-btn" id="replayBtn" type="button">Replay Our Love Story</button>
+        </div>
+      </section>
+    </main>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle music">
+      <i class="fa-solid fa-volume-high"></i>
+    </button>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+      <button class="lightbox-arrow prev" type="button" aria-label="Previous image">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <div class="lightbox-content">
+        <img id="lightboxImage" src="" alt="Expanded romantic memory" />
+        <p id="lightboxCaption"></p>
+      </div>
+      <button class="lightbox-arrow next" type="button" aria-label="Next image">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="love-toast hidden" id="loveToast" aria-live="polite" aria-hidden="true">
+      <div class="love-toast-card">
+        <p class="love-toast-tag">Our forever starts now</p>
+        <h3>Counting down to our forever 💞</h3>
+        <button class="love-toast-heart" id="loveToastHeart" type="button" aria-label="Open our countdown">
+          ❤
+        </button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
